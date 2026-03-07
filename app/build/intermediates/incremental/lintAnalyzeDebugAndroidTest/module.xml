@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app"
+    name=":app"
+    type="APP"
+    maven="Catlendar:app:unspecified"
+    agpVersion="8.7.3"
+    buildFolder="build"
+    bootClassPath="C:\Users\mdgon\AppData\Local\Android\Sdk\platforms\android-34\android.jar;C:\Users\mdgon\AppData\Local\Android\Sdk\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

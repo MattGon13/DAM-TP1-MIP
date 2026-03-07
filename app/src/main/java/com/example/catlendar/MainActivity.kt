@@ -16,8 +16,6 @@ import com.example.catlendar.ui.CalendarFragment
 import com.example.catlendar.ui.SearchFragment
 import com.example.catlendar.worker.CatFactWorker
 import java.util.concurrent.TimeUnit
-import com.example.catlendar.ui.CalendarFragment
-import com.example.catlendar.ui.SearchFragment
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.catlendar.app-mergeDebugResources-3:/layout/fragment_calendar.xml",
+        "source": "com.example.catlendar.app-main-6:/layout/fragment_calendar.xml"
+    },
+    {
+        "merged": "com.example.catlendar.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.example.catlendar.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.catlendar.app-mergeDebugResources-3:/layout/dialog_add_event.xml",
+        "source": "com.example.catlendar.app-main-6:/layout/dialog_add_event.xml"
+    },
+    {
+        "merged": "com.example.catlendar.app-mergeDebugResources-3:/layout/item_event.xml",
+        "source": "com.example.catlendar.app-main-6:/layout/item_event.xml"
+    },
+    {
+        "merged": "com.example.catlendar.app-mergeDebugResources-3:/layout/fragment_search.xml",
+        "source": "com.example.catlendar.app-main-6:/layout/fragment_search.xml"
+    }
+]
