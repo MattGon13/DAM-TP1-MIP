@@ -10,9 +10,12 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.catlendar.data.AppDatabase
+import com.example.catlendar.data.EventRepository
 import com.example.catlendar.databinding.DialogAddEventBinding
 import com.example.catlendar.databinding.FragmentCalendarBinding
 import com.example.catlendar.viewmodel.CalendarViewModel
+import com.example.catlendar.viewmodel.CalendarViewModelFactory
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.coroutines.launch
 import java.time.LocalDate
@@ -23,7 +26,9 @@ class CalendarFragment : Fragment() {
     private var _binding: FragmentCalendarBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel: CalendarViewModel by activityViewModels()
+    private val viewModel: CalendarViewModel by activityViewModels {
+        CalendarViewModelFactory(EventRepository(AppDatabase.getDatabase(requireContext().applicationContext).eventDao()))
+    }
     private lateinit var adapter: EventAdapter
 
     override fun onCreateView(

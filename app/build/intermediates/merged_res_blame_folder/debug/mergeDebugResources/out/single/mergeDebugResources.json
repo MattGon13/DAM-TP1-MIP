@@ -1,31 +1,35 @@
 [
     {
-        "merged": "com.example.catlendar.app-debug-4:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.example.catlendar.app-main-6:/menu/bottom_nav_menu.xml"
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\drawable\\ic_search.xml"
     },
     {
-        "merged": "com.example.catlendar.app-debug-4:/layout_dialog_add_event.xml.flat",
-        "source": "com.example.catlendar.app-main-6:/layout/dialog_add_event.xml"
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\layout_item_event.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\layout\\item_event.xml"
     },
     {
-        "merged": "com.example.catlendar.app-debug-4:/layout_fragment_calendar.xml.flat",
-        "source": "com.example.catlendar.app-main-6:/layout/fragment_calendar.xml"
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\layout_dialog_add_event.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\layout\\dialog_add_event.xml"
     },
     {
-        "merged": "com.example.catlendar.app-debug-4:/layout_activity_main.xml.flat",
-        "source": "com.example.catlendar.app-main-6:/layout/activity_main.xml"
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.catlendar.app-debug-4:/drawable_ic_calendar.xml.flat",
-        "source": "com.example.catlendar.app-main-6:/drawable/ic_calendar.xml"
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.catlendar.app-debug-4:/layout_item_event.xml.flat",
-        "source": "com.example.catlendar.app-main-6:/layout/item_event.xml"
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\drawable_ic_calendar.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\drawable\\ic_calendar.xml"
     },
     {
-        "merged": "com.example.catlendar.app-debug-4:/drawable_ic_search.xml.flat",
-        "source": "com.example.catlendar.app-main-6:/drawable/ic_search.xml"
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-debug-4:\\layout_fragment_calendar.xml.flat",
+        "source": "C:\\Users\\mdgon\\.gradle\\daemon\\9.0.0\\com.example.catlendar.app-main-6:\\layout\\fragment_calendar.xml"
     },
     {
         "merged": "com.example.catlendar.app-debug-4:/layout_fragment_search.xml.flat",

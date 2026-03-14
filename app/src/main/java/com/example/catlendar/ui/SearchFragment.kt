@@ -10,20 +10,23 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.catlendar.data.AppDatabase
+import com.example.catlendar.data.EventRepository
 import com.example.catlendar.databinding.FragmentSearchBinding
-import com.example.catlendar.viewmodel.CalendarViewModel
+import com.example.catlendar.viewmodel.CalendarViewModelFactory
 import com.example.catlendar.viewmodel.SearchViewModel
 import kotlinx.coroutines.launch
+import androidx.core.widget.addTextChangedListener
 
 class SearchFragment : Fragment() {
 
     private var _binding: FragmentSearchBinding? = null
     private val binding get() = _binding!!
 
-    // Shared with CalendarFragment to get all events if we had a real DB
-    // In our case we will just search the simulated DB from CalendarViewModel
-    private val calendarViewModel: CalendarViewModel by activityViewModels()
-    private val searchViewModel: SearchViewModel by activityViewModels()
+    // Use ViewModelFactory to inject Repository
+    private val searchViewModel: SearchViewModel by activityViewModels {
+        CalendarViewModelFactory(EventRepository(AppDatabase.getDatabase(requireContext().applicationContext).eventDao()))
+    }
 
     private lateinit var adapter: EventAdapter
 
@@ -46,12 +49,7 @@ class SearchFragment : Fragment() {
     private fun setupRecyclerView() {
         adapter = EventAdapter(
             onDelete = { event ->
-                calendarViewModel.deleteEvent(event.id)
-                // Trigger an update
-                searchViewModel.updateSearchQuery(
-                    binding.searchBar.text.toString(),
-                    calendarViewModel.uiState.value.allEvents
-                )
+                searchViewModel.deleteEvent(event.id)
             }
         )
         binding.recyclerViewSearchResults.layoutManager = LinearLayoutManager(requireContext())
@@ -59,10 +57,15 @@ class SearchFragment : Fragment() {
     }
 
     private fun setupSearchBar() {
+        binding.searchView.setupWithSearchBar(binding.searchBar)
+        
+        binding.searchView.editText.addTextChangedListener {
+            searchViewModel.updateSearchQuery(it.toString())
+        }
+        
         binding.searchView.editText.setOnEditorActionListener { v, _, _ ->
             val query = v.text.toString()
             binding.searchBar.setText(query)
-            searchViewModel.updateSearchQuery(query, calendarViewModel.uiState.value.allEvents)
             binding.searchView.hide()
             true
         }

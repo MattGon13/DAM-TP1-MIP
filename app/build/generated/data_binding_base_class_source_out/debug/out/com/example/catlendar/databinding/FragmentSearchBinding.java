@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class FragmentSearchBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final RecyclerView recyclerViewSearchResults;
@@ -30,7 +30,7 @@ public final class FragmentSearchBinding implements ViewBinding {
   @NonNull
   public final SearchView searchView;
 
-  private FragmentSearchBinding(@NonNull ConstraintLayout rootView,
+  private FragmentSearchBinding(@NonNull CoordinatorLayout rootView,
       @NonNull RecyclerView recyclerViewSearchResults, @NonNull SearchBar searchBar,
       @NonNull SearchView searchView) {
     this.rootView = rootView;
@@ -41,7 +41,7 @@ public final class FragmentSearchBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -84,7 +84,7 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSearchBinding((ConstraintLayout) rootView, recyclerViewSearchResults,
+      return new FragmentSearchBinding((CoordinatorLayout) rootView, recyclerViewSearchResults,
           searchBar, searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
