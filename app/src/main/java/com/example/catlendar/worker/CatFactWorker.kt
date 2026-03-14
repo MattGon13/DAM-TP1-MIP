@@ -1,17 +1,21 @@
 package com.example.catlendar.worker
 
 import android.content.Context
+import android.util.Log
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
+import com.example.catlendar.network.RetrofitClient
 import com.example.catlendar.util.NotificationHelper
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 class CatFactWorker(
     private val context: Context,
     params: WorkerParameters
 ) : CoroutineWorker(context, params) {
 
-    override suspend fun doWork(): Result {
-        val facts = listOf(
+    override suspend fun doWork(): Result = withContext(Dispatchers.IO) {
+        val backupFacts = listOf(
             "Purring doesn't always indicate happiness. It can also be a sign of pain or stress.",
             "Cats have a specialized collarbone that allows them to always land on their feet.",
             "A cat's brain is biologically more similar to a human brain than a dog's.",
@@ -22,9 +26,16 @@ class CatFactWorker(
             "An adult cat has 30 teeth."
         )
         
-        val randomFact = facts.random()
-        NotificationHelper.showCatFactNotification(context, randomFact)
+        val factResult = try {
+            val response = RetrofitClient.apiService.getRandomFact()
+            response.text
+        } catch (e: Exception) {
+            Log.e("CatFactWorker", "Failed to fetch cat fact from API, falling back.", e)
+            backupFacts.random()
+        }
 
-        return Result.success()
+        NotificationHelper.showCatFactNotification(context, factResult)
+
+        Result.success()
     }
 }

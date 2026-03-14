@@ -15,6 +15,7 @@ import com.example.catlendar.databinding.ActivityMainBinding
 import com.example.catlendar.ui.CalendarFragment
 import com.example.catlendar.ui.SearchFragment
 import com.example.catlendar.worker.CatFactWorker
+import java.util.Calendar
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
@@ -76,11 +77,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun scheduleCatFactWorker() {
+        val currentDate = Calendar.getInstance()
+        val dueDate = Calendar.getInstance().apply {
+            set(Calendar.HOUR_OF_DAY, 11)
+            set(Calendar.MINUTE, 0)
+            set(Calendar.SECOND, 0)
+            set(Calendar.MILLISECOND, 0)
+        }
+
+        if (dueDate.before(currentDate)) {
+            dueDate.add(Calendar.HOUR_OF_DAY, 24)
+        }
+
+        val timeDiff = dueDate.timeInMillis - currentDate.timeInMillis
+
         val catFactWorkRequest = PeriodicWorkRequestBuilder<CatFactWorker>(1, TimeUnit.DAYS)
+            .setInitialDelay(timeDiff, TimeUnit.MILLISECONDS)
             .build()
+            
         WorkManager.getInstance(this).enqueueUniquePeriodicWork(
             "DailyCatFact",
-            ExistingPeriodicWorkPolicy.KEEP,
+            ExistingPeriodicWorkPolicy.UPDATE, // Update policy so it recalculates delay if re-enqueued
             catFactWorkRequest
         )
     }
