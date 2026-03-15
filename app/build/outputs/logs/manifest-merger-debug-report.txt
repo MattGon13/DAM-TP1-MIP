@@ -122,11 +122,11 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\mdgon\.gradle\cach
 	android:label
 		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:12:9-50
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:12:9-48
 	tools:targetApi
 		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:15:9-29
 	android:icon
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:10:9-45
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
 		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
