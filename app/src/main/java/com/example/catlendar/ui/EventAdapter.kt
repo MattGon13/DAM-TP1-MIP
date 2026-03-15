@@ -9,6 +9,7 @@ import com.example.catlendar.databinding.ItemEventBinding
 import com.example.catlendar.model.CatEvent
 
 class EventAdapter(
+    private val showDate: Boolean = false,
     private val onDelete: (CatEvent) -> Unit
 ) : ListAdapter<CatEvent, EventAdapter.EventViewHolder>(EventDiffCallback()) {
 
@@ -26,7 +27,13 @@ class EventAdapter(
 
         fun bind(event: CatEvent) {
             binding.textEventTitle.text = event.title
-            binding.textEventTime.text = event.time
+            
+            if (showDate) {
+                binding.textEventTime.text = "${event.date} • ${event.time}"
+            } else {
+                binding.textEventTime.text = event.time
+            }
+            
             binding.buttonDeleteEvent.setOnClickListener {
                 onDelete(event)
             }

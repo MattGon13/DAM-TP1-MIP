@@ -48,6 +48,7 @@ class SearchFragment : Fragment() {
 
     private fun setupRecyclerView() {
         adapter = EventAdapter(
+            showDate = true,
             onDelete = { event ->
                 searchViewModel.deleteEvent(event.id)
             }

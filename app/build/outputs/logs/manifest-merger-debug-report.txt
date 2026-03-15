@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.databinding:viewbinding:8.7.3] C:\Users\mdgon\.gradle\caches\9.0.0\transforms\ea9fc6a21fe2db578fb0d2dafb6d4e0f\transformed\viewbinding-8.7.3\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\mdgon\.gradle\caches\9.0.0\transforms\29af2f8049b54a79bf6cd66572897af6\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\mdgon\.gradle\caches\9.0.0\transforms\201aa770187dabb031e8cdcf5e5ef52a\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
@@ -84,9 +84,13 @@ uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:5:22-74
+uses-permission#android.permission.INTERNET
+ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:7:5-24:19
-INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:7:5-24:19
+ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:8:5-25:19
+INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:8:5-25:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\mdgon\.gradle\caches\9.0.0\transforms\71ca98bd5935f8e0afb8687e4afdd9f7\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\mdgon\.gradle\caches\9.0.0\transforms\71ca98bd5935f8e0afb8687e4afdd9f7\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\mdgon\.gradle\caches\9.0.0\transforms\646960ccf5c641e17e8dcd56c70d7269\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -114,37 +118,37 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\mdgon\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\mdgon\.gradle\caches\9.0.0\transforms\0ac36844088112ae9cc337ebe7eda9e8\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:11:9-50
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:12:9-50
 	tools:targetApi
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:15:9-29
 	android:icon
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:9:9-45
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:10:9-45
 	android:allowBackup
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:13:9-47
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:14:9-47
 activity#com.example.catlendar.MainActivity
-ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:15:9-23:20
+ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:16:9-24:20
 	android:exported
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:18:13-36
 	android:theme
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:18:13-51
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:19:13-51
 	android:name
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:17:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:19:13-22:29
+ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\ISEL\6_SEMESTRE\Desenvolvimento_de_Aplicacoes_Moveis\DAM-TP1-MIP\app\src\main\AndroidManifest.xml

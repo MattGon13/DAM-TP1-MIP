@@ -1,4 +1,4 @@
-#Sat Mar 14 16:49:35 WET 2026
+#Sun Mar 15 15:35:57 WET 2026
 base.0=C\:\\ISEL\\6_SEMESTRE\\Desenvolvimento_de_Aplicacoes_Moveis\\DAM-TP1-MIP\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\ISEL\\6_SEMESTRE\\Desenvolvimento_de_Aplicacoes_Moveis\\DAM-TP1-MIP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\ISEL\\6_SEMESTRE\\Desenvolvimento_de_Aplicacoes_Moveis\\DAM-TP1-MIP\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
